@@ -75,3 +75,29 @@ python bl_ids_scanner.py rank --input real_bl_data.csv
 python filter_candidates.py
 python rfi_filter_candidates.py
 python final_candidates.py
+
+
+Repository Structure
+
+src/        → analysis pipeline code  
+results/    → anomaly detection outputs  
+README.md   → project description
+
+Data Source
+
+Breakthrough Listen Open Data
+https://seti.berkeley.edu/opendata
+
+Interpretation
+
+These signals do not confirm extraterrestrial origin,
+but represent high-priority technosignature candidates.
+
+They satisfy key characteristics expected from:
+
+Artificial, efficiency-optimized signal systems
+
+Author
+
+Minjun Kim
+Independent Researcher
