@@ -23,11 +23,11 @@ This leads to the concept of **Intelligence Density (IDS)**.
 
 The pipeline processes real Breakthrough Listen data through the following steps:
 
-1. Raw signal ingestion  
-2. Data transformation into structured format  
-3. IDS-based scoring  
-4. RFI cluster detection and removal  
-5. Extraction of non-repeating anomaly candidates  
+- Raw signal ingestion  
+- Data transformation into structured format  
+- IDS-based scoring  
+- RFI cluster detection and removal  
+- Extraction of non-repeating anomaly candidates  
 
 ---
 
@@ -74,37 +74,9 @@ Intermediate filtered candidates are available in:
 
 ## How to Run
 
-Example workflow:
-
 ```bash
-
 python convert_bl_data.py
 python bl_ids_scanner.py rank --input real_bl_data.csv
 python filter_candidates.py
 python rfi_filter_candidates.py
 python final_candidates.py
-
-Repository Structure
-
-src/        → analysis pipeline code  
-results/    → anomaly detection outputs  
-README.md   → project description
-
-Data Source
-
-Breakthrough Listen Open Data
-https://seti.berkeley.edu/opendata
-
-Interpretation
-
-These signals do not confirm extraterrestrial origin,
-but represent high-priority technosignature candidates.
-
-They satisfy key characteristics expected from:
-
-Artificial, efficiency-optimized signal systems
-
-Author
-
-Minjun Kim
-Independent Researcher
